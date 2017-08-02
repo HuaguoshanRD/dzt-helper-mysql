@@ -1,0 +1,32 @@
+{
+  "name": "backup-mysql",
+  "version": "1.0.4",
+  "description": "this is a tool for backup mysql from remote server.",
+  "main": "app.js",
+  "dependencies": {
+    "async": "^2.5.0",
+    "mysql": "^2.14.0",
+    "mysql-tools": "^0.1.2",
+    "request": "^2.81.0",
+    "readline-sync": "^1.4.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KDSER/backupManager.git"
+  },
+  "keywords": [
+    "backup",
+    "mysql",
+    "express"
+  ],
+  "author": "kdser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KDSER/backupManager/issues"
+  },
+  "homepage": "https://github.com/KDSER/backupManager#readme"
+}
