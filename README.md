@@ -15,14 +15,14 @@ npm install
 change your config
 ```sh
 var config = {
-    host:'localhost',                                               //Êı¾İ¿âÖ÷»úÃû³Æ£¬´Ë´¦Îª¿Í»§¶Ë Ò»°ãÎªlocalhost
-    port:'3306',                                                     //Êı¾İ¿â¶Ë¿ÚºÅ£¬Ò»°ãÎª3306
-    user:'username',                                             //Êı¾İ¿âÓÃ»§Ãû
-    password:'password',                                     //Êı¾İ¿âÃÜÂë
-    manage_database:'datebase name',               //ÏëÒªÖ´ĞĞµ¼ÈëµÄÊı¾İ¿âÃû³Æ
-    forCreate_database:'datebase name',             //ÌîĞ´Ò»¸ö±¾µØ´æÔÚµÄÊı¾İ¿âÃû³Æ£¨²»»á¶ÔÆä½øĞĞÈÎºÎ²Ù×÷£©
-    baseUrlPath:'http://127.0.0.1:3000/dir/',          //ÔÚÆô¶¯expressµÄÊ±ºòµÄ»ù±¾·şÎñµØÖ·£¨²»¼Ó¾ßÌå½Ó¿ÚÃû³Æ£©
-    baseZipName:'sql.7z'                                      //Ñ¹ËõÎÄ¼şÃû³Æ£¬¿ÉÒÔ²»ÓÃĞŞ¸Ä
+    host:'localhost',                                                //æ•°æ®åº“ä¸»æœºåç§°ï¼Œæ­¤å¤„ä¸ºå®¢æˆ·ç«¯ ä¸€èˆ¬ä¸ºlocalhost
+    port:'3306',                                                     //æ•°æ®åº“ç«¯å£å·ï¼Œä¸€èˆ¬ä¸º3306
+    user:'username',                                                 //æ•°æ®åº“ç”¨æˆ·å
+    password:'password',                                             //æ•°æ®åº“å¯†ç 
+    manage_database:'datebase name',                                 //æƒ³è¦æ‰§è¡Œå¯¼å…¥çš„æ•°æ®åº“åç§°
+    forCreate_database:'datebase name',                              //å¡«å†™ä¸€ä¸ªæœ¬åœ°å­˜åœ¨çš„æ•°æ®åº“åç§°ï¼ˆä¸ä¼šå¯¹å…¶è¿›è¡Œä»»ä½•æ“ä½œï¼‰
+    baseUrlPath:'http://127.0.0.1:3000/dir/',                        //åœ¨å¯åŠ¨expressçš„æ—¶å€™çš„åŸºæœ¬æœåŠ¡åœ°å€ï¼ˆä¸åŠ å…·ä½“æ¥å£åç§°ï¼‰
+    baseZipName:'sql.7z'                                             //å‹ç¼©æ–‡ä»¶åç§°ï¼Œå¯ä»¥ä¸ç”¨ä¿®æ”¹
 };
 ```
 
@@ -40,12 +40,12 @@ cd /RemoteBackupManage
 change your config
 ```sh
 var databaseConfig = {
-    host:'localhost',                                           //·şÎñÆ÷ÏÂmysqlµÄÖ÷»úÃû³Æ£¬Ò»°ãÎªlocalhost
-    user:'username',                                          //·şÎñÆ÷ÏÂmysqlÓÃ»§Ãû
-    password:'password',                                  //·şÎñÆ÷ÏÂmysqlÃÜÂë
-    dumpPath:'./public/download',                   //·şÎñÆ÷¶ËÎÄ¼ş²Ù×÷Ä¿Â¼£¬±ØĞë±£Ö¤ÓĞÕâ¸öÎÄ¼ş¼ĞÇÒÎª¿Õ
-    database:'database name',                          //·şÎñÆ÷Êı¾İ¿âÃû³Æ
-    tokenText:'abc'                                           //tokenÖµ ¿ÉÒÔÈÎÒâĞŞ¸Ä
+    host:'localhost',                                           //æœåŠ¡å™¨ä¸‹mysqlçš„ä¸»æœºåç§°ï¼Œä¸€èˆ¬ä¸ºlocalhost
+    user:'username',                                            //æœåŠ¡å™¨ä¸‹mysqlç”¨æˆ·å
+    password:'password',                                        //æœåŠ¡å™¨ä¸‹mysqlå¯†ç 
+    dumpPath:'./public/download',                               //æœåŠ¡å™¨ç«¯æ–‡ä»¶æ“ä½œç›®å½•ï¼Œå¿…é¡»ä¿è¯æœ‰è¿™ä¸ªæ–‡ä»¶å¤¹ä¸”ä¸ºç©º
+    database:'database name',                                   //æœåŠ¡å™¨æ•°æ®åº“åç§°
+    tokenText:'abc'                                             //tokenå€¼ å¯ä»¥ä»»æ„ä¿®æ”¹
 };
 ```
 launch service(Express)
