@@ -92,20 +92,3 @@ function sendHttpRequest(url){
 }
 
 module.exports = tool;
-
-//var option = {
-//    host:'localhost',
-//    user:'root',
-//    password:'123456',
-//    sqlFilePath:'./120.sql',
-//    database:'bird'
-//};
-
-//importIntoMysql(option).then(function(data){
-//    console.log(data);
-//});
-
-//zipFileWith7zip('test.7z','120.sql').then(function(data1,data2){
-//    console.log(data1);
-//    console.log(data2);
-//})

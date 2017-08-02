@@ -307,7 +307,7 @@ function compareArr(arrbefor,arrafter){
     }
 }
 
-//console.log(leftpad('12',4,'0'));   //012
+
 
 
 
