@@ -15,14 +15,14 @@ npm install
 change your config
 ```sh
 var config = {
-    host:'',                                     //Êı¾İ¿âÖ÷»úÃû³Æ
-    port:'',                                          //Êı¾İ¿â¶Ë¿ÚºÅ
-    user:'',                                          //Êı¾İ¿âÓÃ»§Ãû
-    password:'',                                    //Êı¾İ¿âÃÜÂë
-    manage_database:'',                        //ÏëÒªÖ´ĞĞµ¼ÈëµÄÊı¾İ¿âÃû³Æ
-    forCreate_database:'',                           //¸ÃÊı¾İ¿âÖ»Òª´æÔÚ¼´¿É
-    baseUrlPath:'',         //·şÎñÆ÷µØÖ·
-    baseZipName:'test.7z'                                  //Ñ¹ËõÎÄ¼şÃû³Æ£¬¿ÉÒÔ²»ÓÃĞŞ¸Ä
+    host:'',                                          //æ•°æ®åº“ä¸»æœºåç§°
+    port:'',                                          //æ•°æ®åº“ç«¯å£å·
+    user:'',                                          //æ•°æ®åº“ç”¨æˆ·å
+    password:'',                                      //æ•°æ®åº“å¯†ç 
+    manage_database:'',                               //æƒ³è¦æ‰§è¡Œå¯¼å…¥çš„æ•°æ®åº“åç§°
+    forCreate_database:'',                            //è¯¥æ•°æ®åº“åªè¦å­˜åœ¨å³å¯
+    baseUrlPath:'',                                   //æœåŠ¡å™¨åœ°å€
+    baseZipName:'test.7z'                             //å‹ç¼©æ–‡ä»¶åç§°ï¼Œå¯ä»¥ä¸ç”¨ä¿®æ”¹
 };
 ```
 
@@ -43,7 +43,7 @@ var databaseConfig = {
     host:'',
     user:'',
     password:'',
-    dumpPath:'./public/download',                    //·şÎñÆ÷¶ËÎÄ¼ş²Ù×÷Ä¿Â¼£¬±ØĞë±£Ö¤ÓĞÕâ¸öÎÄ¼ş¼ĞÇÒÎª¿Õ
+    dumpPath:'./public/download',                    //æœåŠ¡å™¨ç«¯æ–‡ä»¶æ“ä½œç›®å½•ï¼Œå¿…é¡»ä¿è¯æœ‰è¿™ä¸ªæ–‡ä»¶å¤¹ä¸”ä¸ºç©º
     database:'',
     tokenText:''
 };
