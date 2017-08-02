@@ -56,7 +56,7 @@ function zipFileWith7zip(zipfilename,resourcefilename){                         
     });
 }
 
-function unzipFileWith7zip(zipfilename){                                          //解压缩文件
+function unzipFileWith7zip(zipfilename){                                          //解压缩
     return new Promise(
         function(resolve,reject){
             var exec = require('child_process').exec;
