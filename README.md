@@ -5,7 +5,7 @@ npm install backup-mysql
 ```
 
 ## Use
-you should launch express service on your remote server(cd /RemoteBackupManage) , and then you can launch client file(app.js) to backup mysql database from remote server
+you should launch express service on your remote server(cd \RemoteBackupManage) , and then you can launch client file(app.js) to backup mysql database from remote server
 
 ## Client
 install packages first
@@ -35,7 +35,7 @@ install packages first
 npm install
 ```
 ```sh
-cd /RemoteBackupManage
+cd \RemoteBackupManage
 ```
 change your config
 ```sh
