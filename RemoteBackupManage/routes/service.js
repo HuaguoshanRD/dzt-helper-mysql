@@ -6,6 +6,7 @@ var router = express.Router();
 var fs =require('fs');
 var helper = require('../helpers/helper');
 var config = require('../config.js');
+config.dumpPath = "./public/download";
 var tokenValue = "";
 
 var exportOptions= {
@@ -20,10 +21,26 @@ var exportOptions= {
 
 router.get('/readyTask', function(req, res, next) {
     tokenValue = config.tokenText+ new Date().getTime();       //可以再加一个md5
-    res.send({
-        status:'1',
-        tokenValue:tokenValue
+    fs.exists('./public/download',function(exists){
+        if(exists){
+            res.send({
+                status:'1',
+                tokenValue:tokenValue
+            });
+        }
+        else{
+            fs.mkdir('./public/download',function(err){
+                if(err)
+                    console.error(err);
+                res.send({
+                    status:'1',
+                    tokenValue:tokenValue
+                });
+            });
+        }
     });
+
+
 });
 
 router.get('/exportFromMysql', function(req, res, next) {
