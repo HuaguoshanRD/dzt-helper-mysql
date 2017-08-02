@@ -38,36 +38,35 @@ var connectionAfter = mysql.createConnection({       //此处为了删除当前�
     database: config.forCreate_database              //此处的数据库可以随意填写一个已经存在的数据库名
 });
 
-readyTask(function(data){
-    //获取服务器返回的token
-    tokenValue = JSON.parse(data).tokenValue;
-    var option = readlineSync.question('please select your handle: \n' +
-        '[1]backup mysql from server(launch your express service first);\n' +
-        '[2]import sql file into local mysql;\n' +
-        '[3]download server sql file and import into local mysql;\n');
-    switch (option){                 // typeof  string
-        case '1':
+var option = readlineSync.question('please select your handle: \n' +
+    '[1]backup mysql from server(launch your express service first);\n' +
+    '[2]import sql file into local mysql;\n' +
+    '[3]download server sql file and import into local mysql;\n');
+switch (option){                 // typeof  string
+    case '1':
+         readyTask(function(data){
+            //获取服务器返回的token
+            tokenValue = JSON.parse(data).tokenValue;
             backupFromServer();
-            break;
-        case '2':
-            var fileSelectOption = readlineSync.question('please select file type:\n[1]sql file\n[2]zip file\n');
-            if(fileSelectOption != '1' && fileSelectOption != '2'){
-                console.error('select file type error');
-            }else{
-                var fileUrl = readlineSync.question('please input file name(or path):');
-                importLocalDatabase(fileSelectOption,fileUrl);
-            }
-            break;
-        case '3':
-            var serverfileUrl = readlineSync.question('please input remote file url(limit sql file):');
-            var fileName = new Date().getTime()+".sql";
-            importServerDatabase(serverfileUrl,fileName);
-            break;
-        default:
-            console.log("err choose");
-    }
-});
-
+        });
+        break;
+    case '2':
+        var fileSelectOption = readlineSync.question('please select file type:\n[1]sql file\n[2]zip file\n');
+        if(fileSelectOption != '1' && fileSelectOption != '2'){
+            console.error('select file type error');
+        }else{
+            var fileUrl = readlineSync.question('please input file name(or path):');
+            importLocalDatabase(fileSelectOption,fileUrl);
+        }
+        break;
+    case '3':
+        var serverfileUrl = readlineSync.question('please input remote file url(limit sql file):');
+        var fileName = new Date().getTime()+".sql";
+        importServerDatabase(serverfileUrl,fileName);
+        break;
+    default:
+        console.log("err choose");
+}
 
 
 function readyTask(callback){
